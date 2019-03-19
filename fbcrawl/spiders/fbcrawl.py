@@ -47,7 +47,7 @@ class FacebookSpider(scrapy.Spider):
         
         #parse year
         if 'year' not in kwargs:
-            self.year = 2018
+            self.year = 2019
             self.logger.info('Year attribute not found, set scraping back to {}'.format(self.year))
         else:
             assert int(self.year) <= 2019 and int(self.year) >= 2006,\

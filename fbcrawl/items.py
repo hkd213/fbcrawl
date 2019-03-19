@@ -461,7 +461,20 @@ def url_strip(url):
                 return fullurl[:i+8] + fullurl[i+8:].split('/?')[0]
             else:
                 return fullurl
-    
+
+class EventItem(scrapy.Item):
+    eventID = scrapy.Field()
+    url = scrapy.Field(
+        output_processor=url_strip
+    )
+    name = scrapy.Field()
+    location = scrapy.Field()
+    realDate = scrapy.Field()
+    link = scrapy.Field()
+    details = scrapy.Field()
+    image = scrapy.Field()
+
+
 
 class FbcrawlItem(scrapy.Item):
     source = scrapy.Field()   
