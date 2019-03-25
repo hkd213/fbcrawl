@@ -3,7 +3,7 @@ import logging
 
 from scrapy.loader import ItemLoader
 from scrapy.http import FormRequest
-from fbcrawl.items_sc import EventItem
+from fbcrawl.items import EventItem
 
 
 class EventsSpider(scrapy.Spider):

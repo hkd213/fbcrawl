@@ -2,7 +2,7 @@ import scrapy
 
 from scrapy.loader import ItemLoader
 from fbcrawl.spiders.fbcrawl import FacebookSpider
-from fbcrawl.items_sc import CommentsItem
+from fbcrawl.items import CommentsItem
 
 
 class CommentsSpider(FacebookSpider):

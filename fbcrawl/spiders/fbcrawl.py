@@ -3,7 +3,7 @@ import logging
 
 from scrapy.loader import ItemLoader
 from scrapy.http import FormRequest
-from fbcrawl.items_sc import FbcrawlItem
+from fbcrawl.items import FbcrawlItem
 
 class FacebookSpider(scrapy.Spider):
     """
